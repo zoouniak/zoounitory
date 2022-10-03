@@ -9,6 +9,7 @@ int main(void) {
   printf("배열 a: [");
   for (int i = 0; i < 100; i++) {
     a[i] = rand() % 101;//0~100
+    if(i%10==0)printf("\n");
     printf("%d ", a[i]);
     row_terms[a[i]]++;
   }
